@@ -1,0 +1,6 @@
+{
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "aiXcoder.showTrayIcon": true,
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.enabled": true
+}
