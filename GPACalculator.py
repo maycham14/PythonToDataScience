@@ -43,4 +43,4 @@ def gpa(no_of_subjects):
     print(f" Your GPA is {sum_point / (index + 1)}")
 
 
-gpa(2)
+gpa(9)
