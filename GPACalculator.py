@@ -36,11 +36,11 @@ def gpa(no_of_subjects):
     for key, value in sub_grade.items():
         print(f"Subject: {key} Grade: {value} and point: {grade_gpa[index]}")
         sum_point = sum_point + grade_gpa[index]
-        if not grade_gpa[index] == 0:
+        if  grade_gpa[index] != 0:
             index = index + 1
         else:
             index = index - 1
     print(f" Your GPA is {sum_point / (index + 1)}")
 
 
-gpa(9)
+gpa(6)
