@@ -44,52 +44,42 @@
 #     lists.insert((i - 1), i ** 3)
 #
 # print(lists)
-#
+
 # may = [val ** 3 for val in range(1, 10)]
 # print(may)
 
-person = {"name": "mariama", "last_name": "cham", "age": 22, "city": "paris"}
-print(person["name"] + "\n" + person["last_name"] + "\n" + str(person["age"]) + "\n" + person["city"])
+# while True:
+#     message = int(input("please enter the age.\n"))
+#     print()
+#     if message < 3:
+#         print("the ticket fee is $10 ")
+#     elif 3 >= message >= 12:
+#         print("your ticket is $15")
+#     elif message > 12:
+#         print("your ticket is $20")
+#     else:
+#         break
+count = 0
+for number in range(1, 10):
+    if number % 2 == 0:
+        count += 1
+        print(number)
 
-favorite_language = {"mariama": "c", "fatima": "python", "john": "javascript"}
-friend = ["fatima", "may"]
-for favorite in favorite_language.keys():
-    if favorite in friend:
-        print(f"\t{favorite}, you are in the pool")
-    else:
-        print(f"\n{favorite} take the pool")
+sandwich_orders = ["plain", "filled", "extra", "plenty"]
+finished_sandwich = []
+while sandwich_orders:
+    for sandwich in sandwich_orders:
+        print(f"i made your {sandwich} sandwich.")
+    finished_sandwich_orders = sandwich_orders.pop()
+    finished_sandwich.append(finished_sandwich_orders)
+    for sandwich in finished_sandwich:
+        print(f"{sandwich} was made.\n")
 
-# dictionaries
-
-# person1 = {"username": "maycham14", "first_name": "may", "last_name": "cham", "location": "fajikunda"}
-# person2 = {"username": "tijou06", "first_name": "sheikh", "last_name": "hydara", "location": "bijilo"}
-# people = [person1, person2]
-#
-# for key, value in person1.items():
-#     print(f"{key}: {value}")
-# print("\n")
-# for key, value in person2.items():
-#     print(f"{key}: {value}")
-
-# the input function
-# rental_car = input("please enter the car you would like:\n")
-# print(f"let me see if {rental_car} is available.")
-#
-# seating = int(input("how many people are in the dining group?."))
-#
-# if seating > 8:
-#     print("you would have to wait for a table.")
-# else:
-#     print("table is ready.")
-
-# while loops
-topping = input("please enter the topping you want.\n")
-
-while True:
-    message = topping
-    if message == "quit":
+responses = {}
+active = True
+while active:
+    name = input("where would you love to visit?.\n")
+    responses[name] = name
+    if name.lower() == "quit":
         break
-    else:
-        print(f"{topping} will be added to your pizza\n")
-
-print("Hello")
+print(responses.keys())
