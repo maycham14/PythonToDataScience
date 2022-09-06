@@ -26,5 +26,3 @@ rest.describe_restaurant()
 rest.set_number_served(23)
 rest.increment_number_served(3455)
 rest.increment_number_served(234)
-
-
