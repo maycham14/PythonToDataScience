@@ -15,3 +15,4 @@ class IceCreamStand(Restaurant):
 my = IceCreamStand("place", "gambian")
 print(my.describe_restaurant())
 my.ice_cream_flavors()
+
