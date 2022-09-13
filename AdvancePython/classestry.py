@@ -20,9 +20,14 @@ class Restaurant:
         self.number_served += number
         print(f"the number of served customers is {self.number_served}")
 
+    def reset_number_served(self):
+        self.number_served = 0
+        print(self.number_served)
+
 
 rest = Restaurant("ali baba", "chinese")
 rest.describe_restaurant()
 rest.set_number_served(23)
 rest.increment_number_served(3455)
 rest.increment_number_served(234)
+rest.reset_number_served()
