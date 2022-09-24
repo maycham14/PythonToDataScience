@@ -18,5 +18,6 @@ class Favoritenumber:
             print(f"yor favorite number is {file}")
 
 
+
 favorite = Favoritenumber()
 favorite.add_num()
