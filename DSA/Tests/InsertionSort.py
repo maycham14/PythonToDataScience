@@ -1,4 +1,4 @@
 class InsertionSort:
 
-    def sort(self,)
+    def sort(self,):
         pass
